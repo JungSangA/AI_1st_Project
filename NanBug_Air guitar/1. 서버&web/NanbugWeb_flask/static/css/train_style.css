@@ -1,0 +1,166 @@
+/* ---------------------------- 뒤로가기 버튼 --------------------------------------- */
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #000;
+    font-family: 'BMJUA', sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.container_next{
+    display: flex;
+    justify-content: right;
+    margin-top: 5%;
+}
+
+#prev {
+    /* display: none; */
+    visibility: hidden;
+}
+
+/* .page1 {
+    /* display: none; */
+/* } */
+.page2 {
+    display: none;
+}
+.page3 {
+    display: none;
+}
+
+.backspace {
+    border-radius: 10px;
+    background-color: rgb(39, 39, 168);
+    border: none;
+    color: white;
+    padding: 20px 5px 0px 5px;
+    width: 130px;
+    height: 38px;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    font-size: 18px;
+    margin: 50px 50px;
+    cursor: pointer;
+
+
+}
+
+.backspace.bbutton:hover {
+    background-color: rgb(235, 86, 106);
+}
+
+/* ---------------------------- 뒤로가기 버튼 --------------------------------------- */
+
+
+.align {
+    float: left;
+}
+
+
+.train_Video {
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    margin-right: 190px;
+
+}
+
+.train_Video video {
+    width: 100%;
+    height: 100%;
+
+}
+
+.train_text-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 900;
+    mix-blend-mode: multiply;
+}
+
+/* ----------------버튼 그룹 ------------------------*/
+
+.fl_cen {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img-group img {
+    background-color: #000;
+    /* border: 1px solid gray;  */
+    color: white;
+    /* padding: 1px 1px; */
+    float: left;
+}
+
+.img-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.img-group img:not(:last-child) {
+    border-right: none;
+}
+
+.img-group img:hover {
+    background-color: tomato;
+}
+
+.g img {
+    width: 100%;
+}
+
+.code_text {
+    margin: 0 0 auto 45%;
+    text-align: center;
+    font-size: 300%;
+
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    /* animation: bounce .4s ease infinite alternate; */
+    
+    /* font-family: 'Titan One', cursive; */
+    color: #FFF;
+}
+
+.bounce {
+    animation: bounce .4s ease  alternate;
+}
+
+@keyframes bounce {
+    50% {
+        top: -20px;
+        
+    }
+    100% {
+        top: 20px;
+    }
+}
+
+/* ------------------------------------------------- */
+
+.text {
+    color: #fff;
+}
